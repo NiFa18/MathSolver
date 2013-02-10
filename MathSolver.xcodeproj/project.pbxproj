@@ -17,6 +17,12 @@
 		2C365A0116C7FDE20000074D /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C365A0016C7FDE20000074D /* Default@2x.png */; };
 		2C365A0316C7FDE20000074D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C365A0216C7FDE20000074D /* Default-568h@2x.png */; };
 		2C365A0616C7FDE20000074D /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C365A0416C7FDE20000074D /* MainStoryboard.storyboard */; };
+		2C365A1E16C7FFB80000074D /* MitternachtsformelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C365A1C16C7FFB80000074D /* MitternachtsformelViewController.m */; };
+		2C365A2016C7FFD00000074D /* 5b2af7493f57bb0ff40d0113763aa427.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C365A1F16C7FFD00000074D /* 5b2af7493f57bb0ff40d0113763aa427.png */; };
+		2C365A3416C8033C0000074D /* CalculatorBrain.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C365A3116C8033C0000074D /* CalculatorBrain.m */; };
+		2C365A3516C8033C0000074D /* CalculatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C365A3316C8033C0000074D /* CalculatorViewController.m */; };
+		2C365A3716C8035F0000074D /* img.php.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C365A3616C8035F0000074D /* img.php.png */; };
+		2C365A3A16C8037B0000074D /* TriangleCalcViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C365A3916C8037B0000074D /* TriangleCalcViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +40,16 @@
 		2C365A0016C7FDE20000074D /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		2C365A0216C7FDE20000074D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		2C365A0516C7FDE20000074D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		2C365A1B16C7FFB80000074D /* MitternachtsformelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MitternachtsformelViewController.h; sourceTree = "<group>"; };
+		2C365A1C16C7FFB80000074D /* MitternachtsformelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MitternachtsformelViewController.m; sourceTree = "<group>"; };
+		2C365A1F16C7FFD00000074D /* 5b2af7493f57bb0ff40d0113763aa427.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 5b2af7493f57bb0ff40d0113763aa427.png; sourceTree = "<group>"; };
+		2C365A3016C8033C0000074D /* CalculatorBrain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalculatorBrain.h; sourceTree = "<group>"; };
+		2C365A3116C8033C0000074D /* CalculatorBrain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalculatorBrain.m; sourceTree = "<group>"; };
+		2C365A3216C8033C0000074D /* CalculatorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalculatorViewController.h; sourceTree = "<group>"; };
+		2C365A3316C8033C0000074D /* CalculatorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalculatorViewController.m; sourceTree = "<group>"; };
+		2C365A3616C8035F0000074D /* img.php.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img.php.png; sourceTree = "<group>"; };
+		2C365A3816C8037B0000074D /* TriangleCalcViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TriangleCalcViewController.h; sourceTree = "<group>"; };
+		2C365A3916C8037B0000074D /* TriangleCalcViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TriangleCalcViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +97,14 @@
 			isa = PBXGroup;
 			children = (
 				2C365A0416C7FDE20000074D /* MainStoryboard.storyboard */,
+				2C365A3816C8037B0000074D /* TriangleCalcViewController.h */,
+				2C365A3916C8037B0000074D /* TriangleCalcViewController.m */,
+				2C365A1B16C7FFB80000074D /* MitternachtsformelViewController.h */,
+				2C365A1C16C7FFB80000074D /* MitternachtsformelViewController.m */,
+				2C365A3016C8033C0000074D /* CalculatorBrain.h */,
+				2C365A3116C8033C0000074D /* CalculatorBrain.m */,
+				2C365A3216C8033C0000074D /* CalculatorViewController.h */,
+				2C365A3316C8033C0000074D /* CalculatorViewController.m */,
 				2C3659F316C7FDE20000074D /* Supporting Files */,
 			);
 			path = MathSolver;
@@ -89,6 +113,8 @@
 		2C3659F316C7FDE20000074D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				2C365A3616C8035F0000074D /* img.php.png */,
+				2C365A1F16C7FFD00000074D /* 5b2af7493f57bb0ff40d0113763aa427.png */,
 				2C3659FB16C7FDE20000074D /* AppDelegate.h */,
 				2C3659FC16C7FDE20000074D /* AppDelegate.m */,
 				2C3659F416C7FDE20000074D /* MathSolver-Info.plist */,
@@ -158,6 +184,8 @@
 				2C365A0116C7FDE20000074D /* Default@2x.png in Resources */,
 				2C365A0316C7FDE20000074D /* Default-568h@2x.png in Resources */,
 				2C365A0616C7FDE20000074D /* MainStoryboard.storyboard in Resources */,
+				2C365A2016C7FFD00000074D /* 5b2af7493f57bb0ff40d0113763aa427.png in Resources */,
+				2C365A3716C8035F0000074D /* img.php.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -170,6 +198,10 @@
 			files = (
 				2C3659F916C7FDE20000074D /* main.m in Sources */,
 				2C3659FD16C7FDE20000074D /* AppDelegate.m in Sources */,
+				2C365A1E16C7FFB80000074D /* MitternachtsformelViewController.m in Sources */,
+				2C365A3416C8033C0000074D /* CalculatorBrain.m in Sources */,
+				2C365A3516C8033C0000074D /* CalculatorViewController.m in Sources */,
+				2C365A3A16C8037B0000074D /* TriangleCalcViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,6 +324,7 @@
 				2C365A1916C7FDE20000074D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
