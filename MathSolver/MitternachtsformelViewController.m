@@ -7,6 +7,7 @@
 //
 
 #import "MitternachtsformelViewController.h"
+#import "Complex.h"
 #include "math.h"
 
 @interface MitternachtsformelViewController ()
@@ -37,11 +38,12 @@
         double c = [self.fieldC.text doubleValue];
         double res1;
         double res2;
+        Complex *cres = [[Complex alloc] init];
         if (b*b-4*a*c < 0) {
-            res1 = sqrt(fabs(b*b-4*a*c))/(2*a);     //imaginary result (+-)
-            res2 = (-1*b)/(2*a);                 //real result
-            self.labelRes1.text = [NSString stringWithFormat:@"%g + j %g",res2, res1];
-            self.labelRes2.text = [NSString stringWithFormat:@"%g - j %g",res2, res1];
+            cres.imag = [NSNumber numberWithDouble:(sqrt(fabs(b*b-4*a*c))/(2*a))];      //imaginary result (+-)
+            cres.real = [NSNumber numberWithDouble:((-1*b)/(2*a))];                     //real result
+            self.labelRes1.text = [cres complexAsString];
+            self.labelRes2.text = [cres.conj complexAsString];
         } else {
             res1 = (-1*b+sqrt(b*b-4*a*c))/(2*a);
             res2 = (-1*b-sqrt(b*b-4*a*c))/(2*a);
