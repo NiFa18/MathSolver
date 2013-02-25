@@ -10,7 +10,16 @@
 #include "math.h"
 
 @interface TriangleCalcViewController ()
+
 @property (nonatomic) BOOL angle;       // 0=deg / 1=rad
+@property (weak, nonatomic) IBOutlet UITextField *fieldA;
+@property (weak, nonatomic) IBOutlet UITextField *fieldB;
+@property (weak, nonatomic) IBOutlet UITextField *fieldC;
+@property (weak, nonatomic) IBOutlet UITextField *fieldAlpha;
+@property (weak, nonatomic) IBOutlet UITextField *fieldBeta;
+@property (weak, nonatomic) IBOutlet UILabel *statusLabel;
+@property (weak, nonatomic) IBOutlet UIButton *angButton;
+
 @end
 
 @implementation TriangleCalcViewController
@@ -18,6 +27,9 @@
 - (void)viewDidLoad
 {
     self.statusLabel.text = [NSString stringWithFormat:@"Type in two values"];
+    [self.angButton setTitle:@"deg" forState:UIControlStateNormal];
+    [self.angButton setTitle:@"rad" forState:UIControlStateSelected];
+
 }
 
 - (IBAction)angleMode:(UIButton *)sender
@@ -26,10 +38,13 @@
     
     if (sender.isSelected)
     {
-        self.angle = YES;
+        self.angle = true;
+        [sender setTitle:@"rad" forState:UIControlStateNormal];
+
     } else
     {
-        self.angle = NO;
+        self.angle = false;
+        [sender setTitle:@"deg" forState:UIControlStateNormal];
     }
 }
 
@@ -41,11 +56,13 @@
     self.fieldB.enabled = !self.fieldB.isEnabled;
     self.fieldC.enabled = !self.fieldC.isEnabled;
     self.fieldAlpha.enabled = !self.fieldAlpha.isEnabled;
+    self.angButton.enabled = !self.angButton.isEnabled;
     
     double ang;
     
     if (self.angle) {
         ang = 1.0;
+        
     } else
     {
         ang = 2*M_PI/360;

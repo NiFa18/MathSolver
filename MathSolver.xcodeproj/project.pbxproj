@@ -69,6 +69,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C01D5E316DC028E00CF4106 /* TriangleCalc */ = {
+			isa = PBXGroup;
+			children = (
+				2C365A3816C8037B0000074D /* TriangleCalcViewController.h */,
+				2C365A3916C8037B0000074D /* TriangleCalcViewController.m */,
+			);
+			name = TriangleCalc;
+			sourceTree = "<group>";
+		};
+		2C01D5E516DC02B900CF4106 /* Mitternachtsformel */ = {
+			isa = PBXGroup;
+			children = (
+				2C365A1B16C7FFB80000074D /* MitternachtsformelViewController.h */,
+				2C365A1C16C7FFB80000074D /* MitternachtsformelViewController.m */,
+			);
+			name = Mitternachtsformel;
+			sourceTree = "<group>";
+		};
+		2C01D5E616DC02CC00CF4106 /* CustomHeaders */ = {
+			isa = PBXGroup;
+			children = (
+				2C85A7EC16DBE05E00783898 /* Complex.h */,
+				2C85A7ED16DBE05E00783898 /* Complex.m */,
+			);
+			name = CustomHeaders;
+			sourceTree = "<group>";
+		};
+		2C01D5E716DC02D900CF4106 /* Calculator */ = {
+			isa = PBXGroup;
+			children = (
+				2C365A3016C8033C0000074D /* CalculatorBrain.h */,
+				2C365A3116C8033C0000074D /* CalculatorBrain.m */,
+				2C365A3216C8033C0000074D /* CalculatorViewController.h */,
+				2C365A3316C8033C0000074D /* CalculatorViewController.m */,
+			);
+			name = Calculator;
+			sourceTree = "<group>";
+		};
 		2C3659E016C7FDE20000074D = {
 			isa = PBXGroup;
 			children = (
@@ -100,16 +138,10 @@
 			isa = PBXGroup;
 			children = (
 				2C365A0416C7FDE20000074D /* MainStoryboard.storyboard */,
-				2C365A3816C8037B0000074D /* TriangleCalcViewController.h */,
-				2C365A3916C8037B0000074D /* TriangleCalcViewController.m */,
-				2C365A1B16C7FFB80000074D /* MitternachtsformelViewController.h */,
-				2C365A1C16C7FFB80000074D /* MitternachtsformelViewController.m */,
-				2C85A7EC16DBE05E00783898 /* Complex.h */,
-				2C85A7ED16DBE05E00783898 /* Complex.m */,
-				2C365A3016C8033C0000074D /* CalculatorBrain.h */,
-				2C365A3116C8033C0000074D /* CalculatorBrain.m */,
-				2C365A3216C8033C0000074D /* CalculatorViewController.h */,
-				2C365A3316C8033C0000074D /* CalculatorViewController.m */,
+				2C01D5E316DC028E00CF4106 /* TriangleCalc */,
+				2C01D5E516DC02B900CF4106 /* Mitternachtsformel */,
+				2C01D5E616DC02CC00CF4106 /* CustomHeaders */,
+				2C01D5E716DC02D900CF4106 /* Calculator */,
 				2C3659F316C7FDE20000074D /* Supporting Files */,
 			);
 			path = MathSolver;
