@@ -8,6 +8,13 @@
 
 #import "Complex.h"
 
+@interface Complex ()
+
+@property (strong, nonatomic) NSNumber *real;
+@property (strong, nonatomic) NSNumber *imag;
+
+@end
+
 @implementation Complex
 
 -(id)initWithComplexReal:(double)preal andImag:(double)pimag

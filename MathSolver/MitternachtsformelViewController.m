@@ -38,10 +38,8 @@
         double c = [self.fieldC.text doubleValue];
         double res1;
         double res2;
-        Complex *cres = [[Complex alloc] init];
         if (b*b-4*a*c < 0) {
-            cres.imag = [NSNumber numberWithDouble:(sqrt(fabs(b*b-4*a*c))/(2*a))];      //imaginary result (+-)
-            cres.real = [NSNumber numberWithDouble:((-1*b)/(2*a))];                     //real result
+            Complex *cres = [[Complex alloc] initWithComplexReal:((-1*b)/(2*a)) andImag:(sqrt(fabs(b*b-4*a*c))/(2*a))];
             self.labelRes1.text = [cres complexAsStringRect];
             self.labelRes2.text = [cres.conj complexAsStringRect];
         } else {
