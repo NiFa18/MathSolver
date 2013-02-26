@@ -42,8 +42,8 @@
         if (b*b-4*a*c < 0) {
             cres.imag = [NSNumber numberWithDouble:(sqrt(fabs(b*b-4*a*c))/(2*a))];      //imaginary result (+-)
             cres.real = [NSNumber numberWithDouble:((-1*b)/(2*a))];                     //real result
-            self.labelRes1.text = [cres complexAsString];
-            self.labelRes2.text = [cres.conj complexAsString];
+            self.labelRes1.text = [cres complexAsStringRect];
+            self.labelRes2.text = [cres.conj complexAsStringRect];
         } else {
             res1 = (-1*b+sqrt(b*b-4*a*c))/(2*a);
             res2 = (-1*b-sqrt(b*b-4*a*c))/(2*a);
