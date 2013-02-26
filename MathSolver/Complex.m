@@ -147,7 +147,7 @@
 
 -(NSString *)complexAsStringPolarRad
 {
-    NSString *s1 = [[NSString alloc] initWithFormat:@"%lg ∠ %lg",[self.abs doubleValue], [self.ang doubleValue]];
+    NSString *s1 = [[NSString alloc] initWithFormat:@"%lg⋅e^(%lg⋅j)",[self.abs doubleValue], [self.ang doubleValue]];
     return s1;
 }
 
