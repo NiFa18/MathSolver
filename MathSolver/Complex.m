@@ -108,25 +108,25 @@
 {
     if ([self.imag doubleValue] < 0.0)
     {
-        NSLog(@"Komplexe Zahl = %lg%lg⋅j", [self.real doubleValue], [self.imag doubleValue]);
+        NSLog(@"%lg%lg⋅j", [self.real doubleValue], [self.imag doubleValue]);
     } else
     {
-        NSLog(@"Komplexe Zahl = %lg+%lg⋅j", [self.real doubleValue], [self.imag doubleValue]);
+        NSLog(@"%lg+%lg⋅j", [self.real doubleValue], [self.imag doubleValue]);
     }
     
 }
 
 -(void)printPolarDeg
 {
-    NSLog(@"Komplexe Zahl = %lg ∠ %lg", [self.abs doubleValue], [self.ang doubleValue]/(2*M_PI)*360);
+    NSLog(@"%lg ∠ %lg", [self.abs doubleValue], [self.ang doubleValue]/(2*M_PI)*360);
 }
 
 -(void)printPolarRad
 {
-    NSLog(@"Komplexe Zahl = %lg⋅e^(%lg⋅j)", [self.abs doubleValue], [self.ang doubleValue]);
+    NSLog(@"%lg⋅e^(%lg⋅j)", [self.abs doubleValue], [self.ang doubleValue]);
 }
 
--(NSString *)complexAsString
+-(NSString *)complexAsStringRect
 {
     NSString *s1 = [[NSString alloc] init];
     if ([self.imag doubleValue] < 0.0)
@@ -139,5 +139,16 @@
     return s1;
 }
 
+-(NSString *)complexAsStringPolarDeg
+{
+    NSString *s1 = [[NSString alloc] initWithFormat:@"%lg ∠ %lg",[self.abs doubleValue], ([self.ang doubleValue]*360/(2*M_PI))];
+    return s1;
+}
+
+-(NSString *)complexAsStringPolarRad
+{
+    NSString *s1 = [[NSString alloc] initWithFormat:@"%lg ∠ %lg",[self.abs doubleValue], [self.ang doubleValue]];
+    return s1;
+}
 
 @end

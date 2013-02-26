@@ -26,7 +26,9 @@
 -(void)printPolarRad;
 -(NSNumber *)abs;
 -(NSNumber *)ang;
--(NSString *)complexAsString;
+-(NSString *)complexAsStringRect;
+-(NSString *)complexAsStringPolarDeg;
+-(NSString *)complexAsStringPolarRad;
 
 
 @end
