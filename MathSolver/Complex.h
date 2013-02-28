@@ -10,6 +10,8 @@
 
 @interface Complex : NSNumber
 
+@property (strong, nonatomic) NSNumber *real;
+@property (strong, nonatomic) NSNumber *imag;
 -(id)initWithComplexReal:(double)preal andImag:(double)pimag;
 -(id)initWithComplexValue:(double)val andAngleRad:(double)ang;
 -(id)initWithComplexValue:(double)val andAngleDeg:(double)ang;
