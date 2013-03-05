@@ -18,19 +18,16 @@
 
 @implementation CalculatorViewController
 
--(CalculatorBrain *)brain
-{
+-(CalculatorBrain *)brain {
     if (!_brain) {
         _brain = [[CalculatorBrain alloc] init];
     }
     return _brain;
 }
 
-- (IBAction)digitPressed:(UIButton *)sender 
-{
+- (IBAction)digitPressed:(UIButton *)sender {
     NSString *digit = sender.currentTitle;
-    if (self.userIsInTheMiddleOfEnteringANumber)
-    {
+    if (self.userIsInTheMiddleOfEnteringANumber) {
         self.display.text = [self.display.text stringByAppendingString:digit];
     } else {
         self.display.text = digit;
@@ -38,14 +35,12 @@
     }
 }
 
-- (IBAction)enterPressed
-{
+- (IBAction)enterPressed {
     [self.brain pushOperand:[self.display.text doubleValue]];
     self.userIsInTheMiddleOfEnteringANumber = NO;    
 }
 
-- (IBAction)operationPressed:(UIButton *)sender 
-{
+- (IBAction)operationPressed:(UIButton *)sender {
     if (self.userIsInTheMiddleOfEnteringANumber) {
         [self enterPressed];
     }
@@ -53,8 +48,8 @@
     NSString *resultString = [NSString stringWithFormat:@"%g", result];
     self.display.text = resultString;
 }
-- (IBAction)clear
-{
+- (IBAction)clear {
     self.display.text = [NSString stringWithFormat:@"0"];
 }
+
 @end

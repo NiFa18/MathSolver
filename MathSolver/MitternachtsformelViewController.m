@@ -16,14 +16,12 @@
 
 @implementation MitternachtsformelViewController
 
-- (IBAction)solveClear:(UIButton *)sender
-{
+- (IBAction)solveClear:(UIButton *)sender {
     sender.selected = !sender.isSelected;
     
     self.fieldA.enabled = !self.fieldA.isEnabled;
     self.fieldB.enabled = !self.fieldB.isEnabled;
-    self.fieldC.enabled = !self.fieldC.isEnabled;
-    
+    self.fieldC.enabled = !self.fieldC.isEnabled;    
 
     if (!sender.isSelected) {
         self.labelRes1.text = [NSString stringWithFormat:@""];
@@ -36,19 +34,16 @@
         double a = [self.fieldA.text doubleValue];
         double b = [self.fieldB.text doubleValue];
         double c = [self.fieldC.text doubleValue];
-        double res1;
-        double res2;
         if (b*b-4*a*c < 0) {
             Complex *cres = [[Complex alloc] initWithComplexReal:((-1*b)/(2*a)) andImag:(sqrt(fabs(b*b-4*a*c))/(2*a))];
             self.labelRes1.text = [cres complexAsStringRect];
             self.labelRes2.text = [cres.conj complexAsStringRect];
         } else {
-            res1 = (-1*b+sqrt(b*b-4*a*c))/(2*a);
-            res2 = (-1*b-sqrt(b*b-4*a*c))/(2*a);
+            double res1 = (-1*b+sqrt(b*b-4*a*c))/(2*a);
+            double res2 = (-1*b-sqrt(b*b-4*a*c))/(2*a);
             self.labelRes1.text = [NSString stringWithFormat:@"%g", res1];
             self.labelRes2.text = [NSString stringWithFormat:@"%g", res2];
         }
-
     }
 }
 @end
