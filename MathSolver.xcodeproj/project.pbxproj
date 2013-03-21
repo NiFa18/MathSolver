@@ -23,7 +23,7 @@
 		2C365A3516C8033C0000074D /* CalculatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C365A3316C8033C0000074D /* CalculatorViewController.m */; };
 		2C365A3716C8035F0000074D /* img.php.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C365A3616C8035F0000074D /* img.php.png */; };
 		2C365A3A16C8037B0000074D /* TriangleCalcViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C365A3916C8037B0000074D /* TriangleCalcViewController.m */; };
-		2C85A7EE16DBE05E00783898 /* Complex.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C85A7ED16DBE05E00783898 /* Complex.m */; };
+		2CA25A4A16FBA5D20004760A /* Complex.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA25A4916FBA5D20004760A /* Complex.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,8 +51,8 @@
 		2C365A3616C8035F0000074D /* img.php.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img.php.png; sourceTree = "<group>"; };
 		2C365A3816C8037B0000074D /* TriangleCalcViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TriangleCalcViewController.h; sourceTree = "<group>"; };
 		2C365A3916C8037B0000074D /* TriangleCalcViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TriangleCalcViewController.m; sourceTree = "<group>"; };
-		2C85A7EC16DBE05E00783898 /* Complex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Complex.h; sourceTree = "<group>"; };
-		2C85A7ED16DBE05E00783898 /* Complex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Complex.m; sourceTree = "<group>"; };
+		2CA25A4816FBA5D20004760A /* Complex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Complex.h; path = ../Complex/complex/complex/Complex.h; sourceTree = "<group>"; };
+		2CA25A4916FBA5D20004760A /* Complex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Complex.m; path = ../Complex/complex/complex/Complex.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,8 +90,8 @@
 		2C01D5E616DC02CC00CF4106 /* CustomHeaders */ = {
 			isa = PBXGroup;
 			children = (
-				2C85A7EC16DBE05E00783898 /* Complex.h */,
-				2C85A7ED16DBE05E00783898 /* Complex.m */,
+				2CA25A4816FBA5D20004760A /* Complex.h */,
+				2CA25A4916FBA5D20004760A /* Complex.m */,
 			);
 			name = CustomHeaders;
 			sourceTree = "<group>";
@@ -239,7 +239,7 @@
 				2C365A3416C8033C0000074D /* CalculatorBrain.m in Sources */,
 				2C365A3516C8033C0000074D /* CalculatorViewController.m in Sources */,
 				2C365A3A16C8037B0000074D /* TriangleCalcViewController.m in Sources */,
-				2C85A7EE16DBE05E00783898 /* Complex.m in Sources */,
+				2CA25A4A16FBA5D20004760A /* Complex.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
